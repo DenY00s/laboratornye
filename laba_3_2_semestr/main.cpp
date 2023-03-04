@@ -1,129 +1,43 @@
-﻿#include <iostream>
-
-class Complex
+#include <iostream>
+#include <fstream>
+//1.
+void f()
+{
+	static int count = 0; // static, heap, static
+	count++;
+	std::cout << count << std::endl;
+}
+//2.
+class Log
 {
 private:
-	double m_a;
-	double m_b;
-	int m_mas[10] = { 1,2,3,4 };
+	static std::ofstream m_out;
 
 public:
-	Complex(double a) : m_a(0.0), m_b(0.0)
+	Log()
 	{
-		std::cout << "Basic constructor #1" << std::endl;
+		std::cout << "Constr" << std::endl;
 	}
-
-	
-	/*explicit Complex(double a = 0.0, double b = 0.0) :m_a(a), m_b(b)
+	static void SETLOGPATH(const std::string& path)
 	{
-		std::cout << "Basic constructor" << std::endl;
-	}*/
-	Complex(const Complex& z)
-	{
-		std::cout << "Copy constructor" << std::endl;
-		m_a = z.m_a;
-		m_b = z.m_b;
+		m_out.open(path);
 	}
-	Complex& operator=(Complex z)
+	static void Write(const std::string& msg)
 	{
-		std::cout << "Copy assigment operator" << std::endl;
-		std::swap(m_a, z.m_a);
-		std::swap(m_b, z.m_b);
-		return *this;
+		std::cout << msg << std::endl;
+		m_out << msg;
 	}
-	Complex& operator+=(const Complex& z)
+	~Log()
 	{
-		(*this).m_a += z.m_a;
-		(*this).m_b += z.m_b;
-		return *this;
+		std::cout << "Destr" << std::endl;
 	}
-
-	Complex operator+(const Complex& z)
-	{
-		Complex temp = *this;
-		temp += z;
-		return temp;
-
-	}
-	Complex& operator*=(const Complex& z)
-	{
-		(*this).m_a = ((*this).m_a*z.m_a)-((*this).m_b * z.m_b);
-		(*this).m_b = ((*this).m_a * z.m_b) + ((*this).m_b * z.m_a);
-		return *this;
-	}
-
-	Complex operator*(const Complex& z)
-	{
-		Complex temp = *this;
-		temp *= z;
-		return temp;
-
-	}
-
-	/*int& operator[](int index)
-	{
-		return m_mas[index];
-
-	}*/
-	/*int& at(int index)
-	{
-		if (0 <= index && index < 10)
-			return m_mas[index];
-	}*/
-	Complex& operator++()
-	{
-		this->m_a += 1;
-		return *this;
-	}
-	// постфиксный
-	Complex& operator++(int)
-	{
-		Complex temp = *this;
-		this->m_a += 1;
-		return temp;
-	}
-	friend std::ostream& operator<<(std::ostream& out, const Complex& z);
-	friend std::istream& operator>>(std::istream& in, Complex& z);
-	
 };
-
-Complex operator+(const Complex& z1, const Complex& z2) // rvo
+std::ofstream Log::m_out;
+int main()
 {
-	Complex temp = z1;
-	temp += z2;
-	return temp;
+	Log::SETLOGPATH("log.txt");
+	Log::Write("Hello,world!");
 
-}
-Complex operator*(const Complex& z1, const Complex& z2) // rvo
-{
-	Complex temp = z1;
-	temp *= z2;
-	return temp;
-
-}
-
-std::ostream& operator<<(std::ostream& out, const Complex& z)
-{
-	out << z.m_a << " " << z.m_b << "i";
-	return out;
-}
-std::istream& operator>>(std::istream& in, Complex& z)
-{
-	in >> z.m_a >> z.m_b;
-	return in;
-}int main()
-{
-	Complex z1(1);
-	Complex z2(1);
-	std::cin >> z1;
-	std::cin >> z2;
-	std::cout << z1;
-	std::cout << z2;
-
-	std::cout << (z1 * z2);
 
 	return 0;
 }
-
-
-
