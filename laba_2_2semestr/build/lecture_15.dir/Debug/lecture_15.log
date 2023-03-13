@@ -1,0 +1,3 @@
+﻿  main.cpp
+D:\projects\laba_3\main.cpp(95): warning C4715: String::find: значение возвращается не при всех путях выполнения
+  lecture_15.vcxproj -> D:\projects\laba_3\build\Debug\lecture_15.exe
