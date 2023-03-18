@@ -1,6 +1,6 @@
-^D:\PROJECTS\LABA_3\CMAKELISTS.TXT
+^D:\PROJECTS\LABA_2\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/projects/laba_3 -BD:/projects/laba_3/build --check-stamp-file D:/projects/laba_3/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/projects/laba_2 -BD:/projects/laba_2/build --check-stamp-file D:/projects/laba_2/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

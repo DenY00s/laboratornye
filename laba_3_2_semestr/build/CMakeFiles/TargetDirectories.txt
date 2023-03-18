@@ -1,3 +1,3 @@
-D:/projects/laba_3/build/CMakeFiles/lecture_15.dir
-D:/projects/laba_3/build/CMakeFiles/ALL_BUILD.dir
-D:/projects/laba_3/build/CMakeFiles/ZERO_CHECK.dir
+D:/projects/laba_2/build/CMakeFiles/lecture_15.dir
+D:/projects/laba_2/build/CMakeFiles/ALL_BUILD.dir
+D:/projects/laba_2/build/CMakeFiles/ZERO_CHECK.dir
