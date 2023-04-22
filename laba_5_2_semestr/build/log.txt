@@ -1,0 +1,4 @@
+[2023-04-22 21:28:09] [INFO] Hi, world!
+[2023-04-22 21:28:09] [ERR] No  errors
+[2023-04-22 21:28:09] [INFO] Congrats
+[2023-04-22 21:28:09] [DEB] Program is ended

@@ -1,0 +1,10 @@
+^D:\PROJECTS\LABA_5\BUILD\CMAKEFILES\66FD4EBC950F0E3FEC109BA0627C775E\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/projects/laba_5 -BD:/projects/laba_5/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/projects/laba_5/build/laba_4.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
