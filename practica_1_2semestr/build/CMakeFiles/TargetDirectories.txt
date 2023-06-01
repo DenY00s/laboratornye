@@ -1,0 +1,3 @@
+D:/projects/practica_1/build/CMakeFiles/laba_7.dir
+D:/projects/practica_1/build/CMakeFiles/ALL_BUILD.dir
+D:/projects/practica_1/build/CMakeFiles/ZERO_CHECK.dir

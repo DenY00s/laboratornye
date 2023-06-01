@@ -1,0 +1,10 @@
+^D:\PROJECTS\PRACTICA_1\BUILD\CMAKEFILES\3A8EDFA1326610916B72E77506B61792\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/projects/practica_1 -BD:/projects/practica_1/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/projects/practica_1/build/laba_7.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
