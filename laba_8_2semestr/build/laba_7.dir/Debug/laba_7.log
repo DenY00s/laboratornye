@@ -1,0 +1,5 @@
+﻿  main.cpp
+D:\projects\laba8_2semestr\main.cpp(79,2): warning C4286: std::out_of_range &: перехвачено базовым классом ("const std::logic_error &") в строке 75
+D:\projects\laba8_2semestr\main.cpp(108,2): warning C4286: std::out_of_range &: перехвачено базовым классом ("const std::logic_error &") в строке 104
+D:\projects\laba8_2semestr\main.cpp(139,2): warning C4286: std::out_of_range &: перехвачено базовым классом ("const std::logic_error &") в строке 135
+  laba_7.vcxproj -> D:\projects\laba8_2semestr\build\Debug\laba_7.exe

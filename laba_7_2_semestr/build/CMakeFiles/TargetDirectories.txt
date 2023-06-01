@@ -1,0 +1,3 @@
+D:/projects/laba_7_2_semestr/build/CMakeFiles/laba_7.dir
+D:/projects/laba_7_2_semestr/build/CMakeFiles/ALL_BUILD.dir
+D:/projects/laba_7_2_semestr/build/CMakeFiles/ZERO_CHECK.dir
