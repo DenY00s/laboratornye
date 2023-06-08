@@ -1,0 +1,3 @@
+D:/projects/practica_4_Umniy_Dom/build/CMakeFiles/Umniy_Dom.dir
+D:/projects/practica_4_Umniy_Dom/build/CMakeFiles/ALL_BUILD.dir
+D:/projects/practica_4_Umniy_Dom/build/CMakeFiles/ZERO_CHECK.dir
